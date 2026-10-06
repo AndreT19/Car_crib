@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.header('Car Analysis')
+st.header('Car for sales Analysis')
 
-car_data = pd.read_csv('Vehicles_us.csv')  # lendo os dados
+car_data = pd.read_csv('vehicles_us.csv')  # lendo os dados
 hist_button = st.button('Create histogram')  # criando botao
 
 if hist_button:  # se o botao for clicado
