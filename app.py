@@ -18,12 +18,12 @@ if hist_button:  # se o botao for clicado
     # exibir um grafico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
 
-disp_button = st.button('Create Shatter graph')  # criando botao
+disp_button = st.button('Create Scatter graph')  # criando botao
 
 if disp_button:  # se o botao for clicado
 
     # vai escrever uma mensagem
-    st.write('Creating shatter Graphic for car sales dataset')
+    st.write('Creating scatter Graphic for car sales dataset')
 
     # criar histograma
     fig = px.scatter(car_data, x='model_year', y='price')
